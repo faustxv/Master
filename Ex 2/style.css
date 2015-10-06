@@ -1,0 +1,78 @@
+* {
+  font-family: Arial; }
+
+.user {
+  margin-top: 20px;
+  position: relative;
+  background-color: #F5F5F5;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px;
+  padding-bottom: 0px;
+  width: 750px; }
+  .user .info {
+    position: absolute;
+    width: 480px;
+    border: 0px;
+    top: 19px;
+    left: 212px; }
+    .user .info h2 {
+      color: #2FA4E7; }
+    .user .info p {
+      line-height: 1.55em;
+      margin-top: -10px;
+      font-size: 13px; }
+      .user .info p b {
+        letter-spacing: -1px; }
+  .user .photo {
+    background-color: #fff;
+    border: 1px solid #E9E9E9;
+    border-radius: 4px;
+    padding-bottom: 0px;
+    position: relative;
+    width: 138px;
+    min-height: 140px;
+    margin-top: 20px;
+    margin-left: 36px;
+    margin-bottom: 50px; }
+    .user .photo img {
+      margin: 4px 4px -12px 4px;
+      vertical-align: bottom;
+      width: 130px;
+      height: auto; }
+    .user .photo .flag {
+      background-color: #fff;
+      border: 1px solid #E9E9E9;
+      border-radius: 4px;
+      padding-bottom: 0px;
+      position: absolute;
+      left: -1px;
+      bottom: -1px; }
+      .user .photo .flag img {
+        margin: 4px;
+        vertical-align: bottom;
+        width: 16px;
+        height: 12px; }
+    .user .photo .rating {
+      position: relative;
+      left: 17%;
+      bottom: -20px;
+      width: 500px;
+      overflow: hidden;
+      height: 16px; }
+      .user .photo .rating span {
+        padding: 0 10px 0;
+        background: url("img/stars.png") no-repeat 0 -16px; }
+      .user .photo .rating input {
+        position: absolute;
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        -khtml-opacity: 0;
+        opacity: 0;
+        cursor: pointer;
+        width: 16px; }
+        .user .photo .rating input:checked + span {
+          background-position: 0 -16px; }
+          .user .photo .rating input:checked + span ~ span {
+            background-position: 0 0; }
+
+/*# sourceMappingURL=style.css.map */

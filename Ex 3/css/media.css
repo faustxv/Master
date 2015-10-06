@@ -1,0 +1,48 @@
+@media screen and (max-width: 1120px) {
+  .header h1 {
+    font-size: 68px; }
+
+  section .container div {
+    height: 220px; }
+
+  header {
+    padding: 24px 2% 24px 5%; }
+    header .container .nav span {
+      margin-left: 20px; }
+      header .container .nav span a {
+        font-size: 12px; } }
+@media screen and (max-width: 767px) {
+  .navbar-default {
+    display: table; }
+
+  section .container div {
+    height: auto; }
+
+  header .container .nav span {
+    margin-right: 1px;
+    padding: 0; }
+  header img {
+    height: 48px;
+    width: auto; }
+
+  .header h1 {
+    font-size: 48px; }
+
+  .row1 div #mid {
+    text-align: center;
+    font-size: 100%;
+    padding: 0 10%; } }
+@media screen and (max-width: 480px) {
+  .nav > li {
+    width: 100%; }
+
+  .header h1 {
+    font-size: 32px; } }
+@media screen and (max-width: 320px) {
+  .header h1 {
+    font-size: 24px; } }
+@media screen and (max-width: 991px) {
+  footer .row ul {
+    float: left; } }
+
+/*# sourceMappingURL=media.css.map */

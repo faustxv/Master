@@ -1,0 +1,271 @@
+%grad{
+	display: inline-block;
+	width: 14.28571%;
+	height: 4px;
+}
+%font-top{
+font-size: 16px;
+font-family: 'Source Sans Pro';
+line-height: 24px;
+font-weight: 600; 
+text-rendering: optimizeLegibility;	
+}
+body{
+	margin:0;
+	padding: 0; 
+	background: url('../img/fon.svg') center;
+}
+.grad{
+	width: 100%;
+	height: 4px;
+	font-size: 0;
+	#color1{
+		@extend %grad;
+		background-color: red;
+	}
+	#color2{
+		@extend %grad;
+		background-color: orange;
+	}
+	#color3{
+		@extend %grad;
+		background-color: #ff0;
+	}
+	#color4{
+		@extend %grad;
+		background-color: green;
+	}
+	#color5{
+		@extend %grad;
+		background-color: blue;
+	}
+	#color6{
+		@extend %grad;
+		background-color: indigo;
+	}	
+	#color7{
+		@extend %grad;
+		background-color: violet;
+	}
+}
+.top{
+	background-color: #036;
+	width: 100%;
+	padding:12px 5%;
+	margin: 0 ; 
+		p{
+			@extend %font-top;
+			font-size: 16px;
+			color:#BFCBD8;
+			padding-bottom: 0;
+			text-align: center;
+			margin: 0;
+			a{
+				color:#E6E6E6;
+		}
+	}
+}
+header{
+	padding: 24px 5%;
+	height: auto;
+	.container{
+		width: 100%;
+		padding: 0;
+		position: relative;
+		.nav{
+			padding-top: 35px;
+			margin-right: 0	;
+			float: right;
+			display: inline-block;
+			span{
+				:hover{
+					color:#036;
+				}
+				text-transform: uppercase;
+				margin:0 0.75em 0 2.5em;
+				a{
+					font-family: 'Source Sans Pro';
+					font-weight: 600;
+					font-size: 16px;
+					text-decoration: none;
+					color: #B37399;
+				}
+			}
+		}
+	}
+	img{
+		width: 128px;
+		height: 96px;
+		left: 50px;
+	}
+}
+//CSS with superpowers
+.header{
+	margin-top: 0;
+	width: 100%;
+	h1{
+		padding-left: 5%;
+		padding-right:5%;
+		margin-bottom: 28px;
+		margin-top: 4px;
+		color: #808C99;
+		letter-spacing: -0.03125em;
+		font-family: 'Source Sans Pro';
+		font-weight: 300;
+		font-size: 96px;
+		line-height: 100px;
+		text-align: center;
+	}
+}
+//Окуляри
+.row1{ 
+	display: table;
+	margin: 0; 	
+	background: #fff;
+	width: 100%;
+	.container{
+		margin-left:0;
+		padding-left: 0;
+	}
+	div{ 
+		#mid{
+			font-family: 'Source Sans Pro';
+			font-weight: 400;
+			letter-spacing: -0.00001em;
+			padding: 15.5% 8% 0 1%;
+			vertical-align: middle;
+			font-size: 24px;
+			line-height: 36px;
+			color: #699;
+			text-align: left;
+		}
+	}
+	.img{
+		img{
+			padding: 31px 32px 31px 9%;
+			width: 104%;
+			height: auto;
+		}
+	}
+}
+.pink_line{
+	width: 100%;
+	height: auto;
+	background-color: #c6538c;
+	padding:12px 0;
+	text-align: center;
+	span{
+		font-family: 'Source Sans Pro';
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 20px;
+		color: #F0D4E2;
+		margin-right: 32px;
+		vertical-align: middle;
+		padding:0; 
+		display: inline;
+		padding-top: 12px;
+		a{
+			white-space: nowrap;
+			font-family: 'Source Sans Pro';
+			color: #e6e6e6;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+}
+section{	
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	.container{
+		width: 90%;
+		padding: 24px 0;
+		div{
+			height: 156px;
+		}
+	}
+	h3{
+		text-transform: uppercase;
+		font-family: 'Source serif Pro';
+		color: #808C99;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		margin: 36px 0 12px;
+	}
+	p{
+		font-family: 'Source Sans Pro';
+		font-weight: 400;
+		margin:0 0 24px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	a{
+		color:#C69;
+		&:hover{
+			text-decoration: none;
+			color:#000;
+		}
+	}
+}
+footer{
+	.row{
+		font-family: 'Source Sans Pro';
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 18px;
+		margin: 0; 
+		padding: 55px 5%;
+		p{
+			line-height: 10px;
+			color:#808c99;
+			a{
+				text-decoration: none;
+				color: #000;
+			}
+		}
+		ul{ display: inline;
+		}
+		li{
+			font-family: 'Source Sans Pro';
+			font-weight: 400;
+			font-size: 11px;
+			line-height: 18px;
+			vertical-align: middle;
+			padding:0 24px 0 0; 
+			display: inline;
+			list-style: none; 
+			a{
+				color: #484C55;
+				text-decoration: none;
+			}
+		}
+		.btn{
+			float: right;
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+			border-radius: 5px;
+			border: 1px solid #CCC;
+			width: 150px;
+			height: 25px;
+			color: #000;
+			font-family: 'Source Sans Pro';
+			font-size: 14px;
+			line-height: 26px;
+			font-weight: 600;  
+			padding:0;  
+			&:hover{
+				background-image: -webkit-gradient(linear, 0 0, 0 50%, from(#ffffff), to(#e6e6e6));
+			}
+			img{
+				width: 19px;
+				height: 14px;
+			}
+		}
+	}
+}	
+.navbar-default {
+	float: right;
+  display: none;
+}

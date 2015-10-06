@@ -1,0 +1,90 @@
+*{
+	font-family: Arial;
+}
+@mixin img-base ($w, $h, $m){
+	margin: $m;
+	vertical-align:bottom;
+	width: $w;
+	height: $h;
+}
+@mixin div-base($bc){
+		background-color: $bc;
+		border: 1px solid #E9E9E9;
+		border-radius: 4px;
+		padding-bottom: 0px;
+}
+.user{
+	margin-top: 20px;
+	position: relative;
+	@include div-base(#F5F5F5);
+	width: 750px;
+	.info{ 
+		position: absolute;
+		width: 480px; 
+		border:0px;
+		top:19px;
+		left: 212px;
+		h2{
+			color:#2FA4E7;
+		}
+		p{
+			line-height: 1.55em;
+			margin-top: -10px;
+			font-size: 13px;
+			b{
+				letter-spacing: -1px;
+			}
+		}
+	}
+	.photo{
+		@include div-base( #fff);
+		position: relative;
+		width: 138px;
+		min-height: 140px;
+		margin-top: 20px;
+		margin-left: 36px;
+		margin-bottom: 50px;	
+		img {
+			@include img-base(130px, auto, 4px 4px -12px 4px );
+		}
+		.flag{
+			@include div-base(#fff);
+			position: absolute;
+			left: -1px;
+			bottom: -1px;
+			img {
+				@include img-base(16px, 12px, 4px);
+			}
+		}
+		.rating{
+			position: relative;
+			left: 17%;
+			bottom: -20px;
+			width: 500px;;
+			overflow: hidden;
+			height: 16px;
+			span{
+			  padding:0 10px 0;
+			  background:url("img/stars.png") no-repeat 0 -16px;		
+			}
+			input {
+				position:absolute;
+		    filter:alpha(opacity=0);
+		    -moz-opacity:0;
+		    -khtml-opacity:0;
+		    opacity:0;
+		    cursor:pointer;
+		    width:16px;
+		    &:checked+span{
+		    	background-position:0 -16px;
+		    	&~span{
+		    	background-position:0 0;
+		    	}
+		    }
+			}
+		}		
+	}
+}
+
+
+
